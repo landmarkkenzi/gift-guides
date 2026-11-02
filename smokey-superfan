@@ -95,13 +95,13 @@
 
 /* Joshua Tree National Park */
 .gift-guide-marker-2 {
-  left: 20%;
+  left: 12%;
   top: 56%;
 }
 
 /* Saguaro National Park */
 .gift-guide-marker-3 {
-  left: 27%;
+  left: 12%;
   top: 59%;
 }
 
@@ -113,7 +113,7 @@
 
 /* Bryce Canyon National Park */
 .gift-guide-marker-5 {
-  left: 22%;
+  left: 12%;
   top: 42%;
 }
 
@@ -131,7 +131,7 @@
 
 /* Denali National Park */
 .gift-guide-marker-9 {
-  left: 23%;
+  left: 12%;
   top: 76%;
 }
 
@@ -144,25 +144,25 @@
 
 /* Isle Royale */
 .gift-guide-marker-12 {
-  left: 67%;
+  left: 12%;
   top: 15%;
 }
 
 /* Crater Lake */
 .gift-guide-marker-13 {
-  left: 11%;
+  left: 12%;
   top: 22%;
 }
 
 /* Canyonlands */
 .gift-guide-marker-14 {
-  left: 28%;
+  left: 12%;
   top: 43%;
 }
 
 /* Glacier */
 .gift-guide-marker-15 {
-  left: 31%;
+  left: 12%;
   top: 12%;
 }
 
