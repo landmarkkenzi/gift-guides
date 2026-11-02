@@ -100,6 +100,12 @@
   top: 26%;
 }
 
+/* Smokey Bear Accessories*/
+.gift-guide-marker-2 {
+  left: 55%;
+  top: 4%;
+}
+
 /* Smokey Bear Sweater */
 .gift-guide-marker-4 {
   left: 33%;
@@ -136,7 +142,7 @@
   top: 17%;
 }
 
-/* Crater Lake */
+/* Smokey Beanie */
 .gift-guide-marker-13 {
   left: 52%;
   top: 5%;
@@ -144,8 +150,8 @@
 
 /* Emblem Sock */
 .gift-guide-marker-14 {
-  left: 65%;
-  top: 7%;
+  left: 75%;
+  top: 5%;
 }
 
 /* Pennant Hat */
@@ -359,6 +365,8 @@
 
     <!-- MARKERS -->
     <button type="button" class="gift-guide-marker gift-guide-marker-1" data-name="Smokey Campaign Hat"></button>
+
+    <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Smokey Bear Accessories"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Smokey Sweater"></button>
 
