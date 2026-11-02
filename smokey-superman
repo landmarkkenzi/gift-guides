@@ -1,0 +1,607 @@
+<style>
+/* =========================================
+   GIFT GUIDE IMAGE
+   ========================================= */
+.gift-guide-fullscreen {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 40px;
+  box-sizing: border-box;
+}
+.gift-guide-map-wrapper {
+  position: relative;
+  width: 100%;
+}
+.gift-guide-map-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2054 / 1442;
+  height: auto;
+}
+
+
+/* =========================================
+   MAP MARKERS
+   ========================================= */
+
+.gift-guide-marker {
+  position: absolute;
+  width: clamp(25px, 2.2vw, 42px);
+  height: clamp(25px, 2.2vw, 42px);
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  border: 2px solid #f43f00;
+  border-radius: 50%;
+  background: #f43f00;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 10;
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: Arial, sans-serif;
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 300;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+/* PLUS SIGN */
+.gift-guide-marker::before {
+  content: "+";
+  display: block;
+  line-height: 1;
+}
+
+
+/* Hover */
+.gift-guide-marker:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+  background: #ffffff;
+  color: #383838;
+  border-color: #383838;
+}
+
+
+/* Keyboard focus */
+.gift-guide-marker:focus-visible {
+  outline: 3px solid #383838;
+  outline-offset: 4px;
+}
+
+
+/* =========================================
+   MARKER POSITIONS
+   ========================================= */
+
+
+/* Yosemite National Park */
+.gift-guide-marker-1 {
+  left: 9%;
+  top: 40%;
+}
+
+/* Joshua Tree National Park */
+.gift-guide-marker-2 {
+  left: 20%;
+  top: 56%;
+}
+
+/* Saguaro National Park */
+.gift-guide-marker-3 {
+  left: 27%;
+  top: 59%;
+}
+
+/* Rocky Mountain National Park */
+.gift-guide-marker-4 {
+  left: 33%;
+  top: 36%;
+}
+
+/* Bryce Canyon National Park */
+.gift-guide-marker-5 {
+  left: 22%;
+  top: 42%;
+}
+
+/* Great Smoky Mountains National Park */
+.gift-guide-marker-7 {
+  left: 71%;
+  top: 50%;
+}
+
+/* Everglades National Park */
+.gift-guide-marker-8 {
+  left: 83%;
+  top: 72%;
+}
+
+/* Denali National Park */
+.gift-guide-marker-9 {
+  left: 23%;
+  top: 76%;
+}
+
+/* Haleakala National Park */
+.gift-guide-marker-10 {
+  left: 53%;
+  top: 93%;
+}
+
+
+/* Isle Royale */
+.gift-guide-marker-12 {
+  left: 67%;
+  top: 15%;
+}
+
+/* Crater Lake */
+.gift-guide-marker-13 {
+  left: 11%;
+  top: 22%;
+}
+
+/* Canyonlands */
+.gift-guide-marker-14 {
+  left: 28%;
+  top: 43%;
+}
+
+/* Glacier */
+.gift-guide-marker-15 {
+  left: 31%;
+  top: 12%;
+}
+
+/* Rainier */
+.gift-guide-marker-16 {
+  left: 13%;
+  top: 12%;
+}
+
+
+/* =========================================
+   MODAL
+   ========================================= */
+
+.gift-guide-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.72);
+  z-index: 999999;
+  line-height: normal;
+}
+
+.gift-guide-modal.is-open {
+  display: flex;
+}
+
+
+/* =========================================
+   MODAL CONTENT
+   ========================================= */
+
+.gift-guide-modal-content {
+  position: relative;
+  width: min(1100px, 100%);
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 40px 32px 32px;
+}
+
+
+/* Park name */
+
+.gift-guide-modal-title {
+  margin: 0 0 24px;
+  padding: 0;
+  color: #383838;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+/* =========================================
+   SHOPPABLE PRODUCT GRID
+   ========================================= */
+
+.gift-guide-shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.gift-guide-shop-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gift-guide-shop-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #f4f4f4;
+}
+
+.gift-guide-shop-card__title {
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.gift-guide-shop-card__price {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.gift-guide-shop-empty {
+  text-align: center;
+  color: #777;
+  padding: 40px 0;
+  margin: 0;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+   ========================================= */
+
+.giftguide-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #383838;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 20;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.giftguide-modal-close:hover {
+  background: #383838;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media screen and (max-width: 749px) {
+
+  ..gift-guide-fullscreen {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .gift-guide-marker {
+    width: clamp(24px, 6vw, 30px);
+    height: clamp(24px, 6vw, 30px);
+    font-size: clamp(18px, 5vw, 24px);
+  }
+
+  .gift-guide-modal {
+    padding: 15px;
+  }
+
+  .gift-guide-modal-content {
+    width: 100%;
+    max-width: 100%;
+    max-height: calc(100vh - 30px);
+    padding: 32px 18px 24px;
+  }
+
+  .gift-guide-modal-title {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .gift-guide-shop-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .giftguide-modal-close {
+    top: 8px;
+    right: 8px;
+
+    width: 34px;
+    height: 34px;
+
+    font-size: 23px;
+    line-height: 34px;
+  }
+}
+</style>
+
+
+<!-- =========================================
+     MAP
+     ========================================= -->
+
+<div class=".gift-guide-fullscreen">
+
+  <div class="gift-guide-map-wrapper">
+
+    <img class="gift-guide-map-image" src="https://cdn.shopify.com/s/files/1/1529/3721/files/Map_Marks_45bdc171-57fd-40bb-8a48-e6c0c203a947.svg?v=1788893663" alt="Find Your Park">
+
+    <!-- MARKERS -->
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-1" data-name="Yosemite National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-2" data-name="Joshua Tree National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-3" data-name="Saguaro National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-4" data-name="Rocky Mountain National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-5" data-name="Bryce Canyon National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-7" data-name="Great Smoky Mountains National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-8" data-name="Everglades National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-9" data-name="Denali National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-10" data-name="Haleakala National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-12" data-name="Isle Royale National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-13" data-name="Crater Lake National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-14" data-name="Canyonlands National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-15" data-name="Glacier National Park"></button>
+
+    <button type="button" class="gift-guide-map-marker gift-guide-marker-16" data-name="Rainier National Park"></button>
+
+  
+  </div>
+
+</div>
+
+
+<!-- =========================================
+     POPUP MODAL (now shows shoppable products)
+     ========================================= -->
+
+<div class="gift-guide-modal" id="gift-guide-modal" role="dialog" aria-modal="true" aria-hidden="true">
+
+  <div class="gift-guide-modal-content">
+
+    <button type="button" class="gift-guide-modal-close" id="gift-guide-modal-close" aria-label="Close">
+      ×
+    </button>
+
+    <h2 class="gift-guide-modal-title" id="gift-guide-modal-title"></h2>
+
+    <div class="gift-guide-shop-grid" id="gift-guide-shop-grid"></div>
+
+    <p class="gift-guide-shop-empty" id="gift-guide-shop-empty" hidden>No products found for this park yet.</p>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================
+     MODAL JAVASCRIPT
+     ========================================= -->
+
+<script>
+(function() {
+
+  const modal = document.getElementById('gift-guide-modal');
+  const modalTitle = document.getElementById('gift-guide-modal-title');
+  const modalClose = document.getElementById('gift-guide-modal-close');
+  const shopGrid = document.getElementById('gift-guide-shop-grid');
+  const shopEmpty = document.getElementById('gift-guide-shop-empty');
+
+  if (!modal || !modalTitle || !modalClose || !shopGrid || !shopEmpty) {
+    return;
+  }
+
+  /* =========================================
+     PRODUCT HANDLES PER PARK
+     Fill in the handles for each park below.
+     A handle is the part of the URL after
+     /products/  e.g. /products/trail-mug
+     ========================================= */
+
+  const PARK_PRODUCTS = {
+    'Yosemite National Park': [],
+    'Joshua Tree National Park': [],
+    'Saguaro National Park': [],
+    'Rocky Mountain National Park': [],
+    'Bryce Canyon National Park': [],
+    'Great Smoky Mountains National Park': [],
+    'Everglades National Park': [],
+    'Denali National Park': [],
+    'Haleakala National Park': [],
+    'Isle Royale National Park': [],
+    'Crater Lake National Park': [],
+    'Canyonlands National Park': [],
+    'Glacier National Park': [],
+    'Rainier National Park': [],
+
+   /* =========================================
+     HOW PRODUCTS ARE ADDED
+     'Big Bend National Park': [ 'big-bend-national-park-poster','big-bend-gear-tag' ]
+     ========================================= */
+
+  };
+
+  const productCache = {};
+
+  function formatMoney(cents) {
+    // Adjust if your store's currency/locale isn't USD
+    return '$' + (cents / 100).toFixed(2);
+  }
+
+  function fetchProduct(handle) {
+    if (productCache[handle]) {
+      return Promise.resolve(productCache[handle]);
+    }
+    return fetch('/products/' + handle + '.js')
+      .then(function(res) {
+        if (!res.ok) throw new Error('Not found: ' + handle);
+        return res.json();
+      })
+      .then(function(data) {
+        productCache[handle] = data;
+        return data;
+      })
+      .catch(function(err) {
+        console.warn('Could not load product', handle, err);
+        return null;
+      });
+  }
+
+  function buildCard(product) {
+    const variant = product.variants && product.variants[0];
+    const price = variant ? formatMoney(variant.price) : '';
+    const image = product.featured_image || (product.images && product.images[0]) || '';
+
+    const a = document.createElement('a');
+    a.className = 'gift-guide-shop-card';
+    a.href = '/products/' + product.handle;
+
+    a.innerHTML =
+      (image ? '<img src="' + image + '" alt="' + product.title + '" loading="lazy">' : '') +
+      '<p class="gift-guide-shop-card__title">' + product.title + '</p>' +
+      '<p class="gift-guide-shop-card__price">' + price + '</p>';
+
+    return a;
+  }
+
+
+  /* =========================================
+     OPEN MODAL
+     ========================================= */
+
+  document.addEventListener('click', function(event) {
+
+    const marker = event.target.closest('.gift-guide-marker');
+    if (!marker) return;
+
+    const name = marker.getAttribute('data-name');
+    const handles = PARK_PRODUCTS[name] || [];
+
+    modalTitle.textContent = name;
+    shopGrid.innerHTML = '';
+    shopEmpty.hidden = true;
+
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+
+    if (!handles.length) {
+      shopEmpty.hidden = false;
+      return;
+    }
+
+    Promise.all(handles.map(fetchProduct)).then(function(products) {
+      const found = products.filter(Boolean);
+      if (!found.length) {
+        shopEmpty.hidden = false;
+        return;
+      }
+      found.forEach(function(product) {
+        shopGrid.appendChild(buildCard(product));
+      });
+    });
+
+  });
+
+
+  /* =========================================
+     CLOSE MODAL
+     ========================================= */
+
+  function closeModal() {
+
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+
+    modalTitle.textContent = '';
+    shopGrid.innerHTML = '';
+    shopEmpty.hidden = true;
+
+    document.body.style.overflow = '';
+
+  }
+
+
+  modalClose.addEventListener('click', closeModal);
+
+
+  /* =========================================
+     CLOSE WHEN CLICKING OUTSIDE CONTENT
+     ========================================= */
+
+  modal.addEventListener('click', function(event) {
+
+    if (event.target === modal) {
+      closeModal();
+    }
+
+  });
+
+
+  /* =========================================
+     CLOSE WITH ESCAPE KEY
+     ========================================= */
+
+  document.addEventListener('keydown', function(event) {
+
+    if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+      closeModal();
+    }
+
+  });
+
+})();
+</script>
