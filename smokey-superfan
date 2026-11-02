@@ -3,22 +3,29 @@
    GIFT GUIDE IMAGE
    ========================================= */
 .gift-guide-fullscreen {
-  width: 100vw;
-  max-width: none;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  padding: 40px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  height: 50vh;
+  overflow: hidden;
   box-sizing: border-box;
 }
+
 .gift-guide-map-wrapper {
   position: relative;
   width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
+
 .gift-guide-map-image {
   display: block;
   width: 100%;
-  aspect-ratio: 2054 / 1442;
-  height: auto;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
 }
 
 
@@ -89,8 +96,8 @@
 
 /* Smokey Bear Campaign Hat */
 .gift-guide-marker-1 {
-  left: 9%;
-  top: 40%;
+  left: 4%;
+  top: 44%;
 }
 
 /* Joshua Tree National Park */
@@ -120,13 +127,13 @@
 /* Smokey Fleece */
 .gift-guide-marker-7 {
   left: 71%;
-  top: 50%;
+  top: 40%;
 }
 
 /* Smokey Pin */
 .gift-guide-marker-8 {
-  left: 83%;
-  top: 52%;
+  left: 75%;
+  top: 25%;
 }
 
 /* Denali National Park */
@@ -138,20 +145,19 @@
 /* Yellow Smokey Bandana */
 .gift-guide-marker-10 {
   left: 53%;
-  top: 63%;
+  top: 43%;
 }
 
-
-/* Isle Royale */
+/* Smokey Magnet */
 .gift-guide-marker-12 {
-  left: 12%;
+  left: 60%;
   top: 15%;
 }
 
 /* Crater Lake */
 .gift-guide-marker-13 {
   left: 12%;
-  top: 22%;
+  top: 4%;
 }
 
 /* Canyonlands */
@@ -168,8 +174,8 @@
 
 /* Smokey Puzzle */
 .gift-guide-marker-16 {
-  left: 13%;
-  top: 12%;
+  left: 9%;
+  top: 10%;
 }
 
 
@@ -370,23 +376,23 @@
     <img class="gift-guide-map-image" src="https://cdn.shopify.com/s/files/1/1529/3721/files/2026_Gift_Guide-Smokey-1280x854-e8ff21e.jpg?v=1793282223" alt="Gifts for the Smokey Superfan">
 
     <!-- MARKERS -->
-    <button type="button" class="gift-guide-marker gift-guide-marker-1" data-name="Yosemite National Park"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-1" data-name="Smokey Campaign Hat"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Joshua Tree National Park"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-3" data-name="Saguaro National Park"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Rocky Mountain National Park"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Smokey Sweater"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-5" data-name="Bryce Canyon National Park"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-7" data-name="Great Smoky Mountains National Park"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-7" data-name="Smokey Fleece"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-8" data-name="Everglades National Park"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-8" data-name="Smokey Pin"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-9" data-name="Denali National Park"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-9" data-name="Calendar"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-10" data-name="Haleakala National Park"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-10" data-name="Yellow Bandana"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-12" data-name="Isle Royale National Park"></button>
 
@@ -396,7 +402,7 @@
 
     <button type="button" class="gift-guide-marker gift-guide-marker-15" data-name="Glacier National Park"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-16" data-name="Rainier National Park"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-16" data-name="Smokey Puzzle"></button>
 
   
   </div>
