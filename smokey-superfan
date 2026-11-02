@@ -93,17 +93,10 @@
    MARKER POSITIONS
    ========================================= */
 
-
-/* Smokey Bear Campaign Hat */
-.gift-guide-marker-1 {
-  left: 4%;
-  top: 26%;
-}
-
 /* Smokey Bear Accessories*/
 .gift-guide-marker-2 {
-  left: 55%;
-  top: 4%;
+  left: 50%;
+  top: 8%;
 }
 
 /* Smokey Bear Sweater */
@@ -115,43 +108,43 @@
 /* Smokey Fleece */
 .gift-guide-marker-7 {
   left: 71%;
-  top: 40%;
+  top: 36%;
 }
 
 /* Smokey Pin */
 .gift-guide-marker-8 {
-  left: 75%;
-  top: 25%;
+  left: 72%;
+  top: 27%;
 }
 
 /* Calendar */
 .gift-guide-marker-9 {
   left: 12%;
-  top: 46%;
+  top: 66%;
 }
 
 /* Yellow Smokey Bandana */
 .gift-guide-marker-10 {
   left: 43%;
-  top: 43%;
+  top: 33%;
 }
 
 /* Smokey Mug */
 .gift-guide-marker-12 {
-  left: 60%;
-  top: 17%;
+  left: 58%;
+  top: 19%;
 }
 
 /* Smokey Beanie */
 .gift-guide-marker-13 {
-  left: 52%;
+  left: 57%;
   top: 5%;
 }
 
 /* Emblem Sock */
 .gift-guide-marker-14 {
-  left: 75%;
-  top: 5%;
+  left: 77%;
+  top: 7%;
 }
 
 /* Pennant Hat */
@@ -162,7 +155,7 @@
 
 /* Smokey Puzzle */
 .gift-guide-marker-16 {
-  left: 9%;
+  left: 15%;
   top: 10%;
 }
 
@@ -364,7 +357,6 @@
     <img class="gift-guide-map-image" src="https://cdn.shopify.com/s/files/1/1529/3721/files/2026_Gift_Guide-Smokey-1280x854-e8ff21e.jpg?v=1793282223" alt="Gifts for the Smokey Superfan">
 
     <!-- MARKERS -->
-    <button type="button" class="gift-guide-marker gift-guide-marker-1" data-name="Smokey Campaign Hat"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Smokey Bear Accessories"></button>
 
@@ -380,7 +372,7 @@
 
     <button type="button" class="gift-guide-marker gift-guide-marker-12" data-name="Smokey Mug"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-13" data-name="Crater Lake National Park"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-13" data-name="Smokey Beanie"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="Emblem Sock"></button>
 
