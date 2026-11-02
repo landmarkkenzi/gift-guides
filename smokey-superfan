@@ -87,7 +87,7 @@
    ========================================= */
 
 
-/* Yosemite National Park */
+/* Smokey Bear Campaign Hat */
 .gift-guide-marker-1 {
   left: 9%;
   top: 40%;
@@ -105,7 +105,7 @@
   top: 59%;
 }
 
-/* Rocky Mountain National Park */
+/* Smokey Bear Sweater */
 .gift-guide-marker-4 {
   left: 33%;
   top: 36%;
@@ -117,16 +117,16 @@
   top: 42%;
 }
 
-/* Great Smoky Mountains National Park */
+/* Smokey Fleece */
 .gift-guide-marker-7 {
   left: 71%;
   top: 50%;
 }
 
-/* Everglades National Park */
+/* Smokey Pin */
 .gift-guide-marker-8 {
   left: 83%;
-  top: 72%;
+  top: 52%;
 }
 
 /* Denali National Park */
@@ -135,10 +135,10 @@
   top: 76%;
 }
 
-/* Haleakala National Park */
+/* Yellow Smokey Bandana */
 .gift-guide-marker-10 {
   left: 53%;
-  top: 93%;
+  top: 63%;
 }
 
 
@@ -166,7 +166,7 @@
   top: 12%;
 }
 
-/* Rainier */
+/* Smokey Puzzle */
 .gift-guide-marker-16 {
   left: 13%;
   top: 12%;
