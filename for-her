@@ -439,15 +439,15 @@
      ========================================= */
 
   const PARK_PRODUCTS = {
-    'Smokeys Message Sock': [ 'Smokeys-Message-Sock'],
-    'Desert Dwellers Bandana': ['Desert-Dwellers-Bandana'],
-    'National Parks Playing Cards': ['National-Parks-Playing-Cards'],
-    'Landmark Outpost Beanie': ['Landmark-Outpost-Beanie'],
-    'Smokey Logo Enamel Mug': ['Smokey-Logo-Enamel-Mug'],
-    '2027 Smokey Bear Calendar': ['2027-Smokey-Bear-Calendar'],
-    'National Park Aficionado 6-Panel Hat': ['National-Park-Aficionado-6-Panel-Hat'],
-    'Traverse Unisex Half Snap Sherpa': ['Traverse-Unisex-Half-Snap-Sherpa'],
-    'Trailhead Unisex Half Zip Fleece': [ 'Trailhead-Unisex-Half-Zip-Fleece'],
+    'Woodsy Owl Bandana': [ 'Woodsy-Owl-Bandana'],
+    'Tread Lightly Sock': ['Tread-Lightly-Sock'],
+    'Poppy & Pout x The Landmark Project: Lip Balm Gift Set Trio Desert': ['Poppy-&-Pout-x-The-Landmark-Project:-Lip-Balm-Gift-Set-Trio-Desert'],
+    'Leave No Trace 5-Panel Camp Hat': ['Leave-No-Trace-5-Panel-Camp-Hat'],
+    'Prismatic Sock': ['Prismatic-Sock'],
+    'National Parks Pixels Enamel Mug': ['National-Parks-Pixels-Enamel-Mug'],
+    'Woodsy Owl Retro Womens Short Sleeve Boxy Tee': ['Woodsy-Owl-Retro-Womens-Short-Sleeve-Boxy-Tee'],
+    'Haven Womens Full Snap Sherpa Jacket': ['Haven-womens-Full-Snap-Sherpa-Jacket'],
+    'Babes in the Woods Womens Crewneck Sweatshirt': [ 'Babes-in-the-Woods-Womens-Crewneck-Sweatshirt'],
 
    /* =========================================
      HOW PRODUCTS ARE ADDED
