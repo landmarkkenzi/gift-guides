@@ -447,8 +447,8 @@
 
   const PARK_PRODUCTS = {
     'National Park Roundup Sock': [ 'national-park-roundup-sock'],
-    'Smokey Bear Unisex Sweater': ['Desert-Dwellers-Bandana'],
-    '2027 National Parks Calendar': ['2027-National-Parks-Calendar'],
+    'Desert Dwellers Bandana': ['Desert-Dwellers-Bandana'],
+    '2027 National Parks Calendar': ['2027-national-parks-calendar'],
     'National Parks Playing Cards': ['National-Parks-Playing-Cards'],
     'National Parks Throwback Unisex Crewneck': ['national-parks-throwback-unisex-crewneck'],
     'National Parks Accessories': ['national-parks-pennant-embroidered-patch','enjoy-the-national-parks-keychain','national-parks-paradise-keychain'],
