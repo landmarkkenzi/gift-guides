@@ -94,7 +94,7 @@
 /* Smokey Bear Accessories*/
 .gift-guide-marker-2 {
   left: 50%;
-  top: 8%;
+  top: 10%;
 }
 
 /* Smokey Bear Sweater */
@@ -112,13 +112,13 @@
 /* Smokey Pin */
 .gift-guide-marker-8 {
   left: 72%;
-  top: 27%;
+  top: 45%;
 }
 
 /* Calendar */
 .gift-guide-marker-9 {
-  left: 12%;
-  top: 66%;
+  left: 29%;
+  top: 56%;
 }
 
 /* Yellow Smokey Bandana */
@@ -130,7 +130,7 @@
 /* Smokey Mug */
 .gift-guide-marker-12 {
   left: 58%;
-  top: 30%;
+  top: 26%;
 }
 
 /* Smokey Beanie */
@@ -148,7 +148,7 @@
 /* Pennant Hat */
 .gift-guide-marker-15 {
   left: 90%;
-  top: 22%;
+  top: 32%;
 }
 
 /* Smokey Puzzle */
@@ -438,7 +438,7 @@
      ========================================= */
 
   const PARK_PRODUCTS = {
-    'Smokey Bear Accessories': [],
+    'Smokey Bear Accessories': [ 'only-you-retro-sticker' , 'prevent-wildfires-keychain','i-love-smokey-magnet'],
     'Smokey Bear Unisex Sweater': ['smokey-bear-unisex-sweater'],
     'Smokey Bear Unisex Half Zip Fleece': ['smokey-bear-unisex-half-zip-fleece'],
     'Smokey Bear Postage Stamp Pin': ['smokey-bear-postage-stamp-pin'],
