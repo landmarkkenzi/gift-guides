@@ -117,7 +117,7 @@
 
 /* National Parks Aficionado Hat */
 .gift-guide-marker-9 {
-  left: 23%;
+  left: 63%;
   top: 80%;
 }
 
@@ -370,27 +370,27 @@
 
     <!-- MARKERS -->
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="National Park Roundup Sock"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Smokey's Message Sock"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Desert Dwellers Bandana"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-7" data-name="2027 National Parks Calendar"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-7" data-name="National Parks Playing Cards"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-8" data-name="National Parks Playing Cards"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-8" data-name="Landmark Outpost Beanie"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-9" data-name="National Parks Throwback Unisex Crewneck"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-9" data-name="National Parks Aficionado 6-Panel Hat"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-10" data-name="National Parks Accessories"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-10" data-name="Smokey Logo Enamel Mug"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-12" data-name="National Park Aficionado 6-Panel Hat"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-12" data-name="2027 Smokey Bear Calendar"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-13" data-name="Northwest Wildlife Bandana"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-13" data-name="Alpine Sunrise Sock"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="National-Parks-Tour-of-North-America-Unisex-Short-Sleeve-Tee"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="Traverse Unisex Half Snap Sherpa"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-15" data-name="Smokey Bear Pennant 5-Panel Hat"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-16" data-name="National Parks Montage Unisex Short Sleeve Tee"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-16" data-name="Trailhead Unisex Half Zip Fleece"></button>
 
   
   </div>
@@ -446,7 +446,7 @@
      ========================================= */
 
   const PARK_PRODUCTS = {
-    'National Park Roundup Sock': [ 'national-park-roundup-sock'],
+    'Smokey's Message Sock': [ 'Smokey's Message Sock'],
     'Desert Dwellers Bandana': ['Desert-Dwellers-Bandana'],
     '2027 National Parks Calendar': ['2027-national-parks-calendar'],
     'National Parks Playing Cards': ['National-Parks-Playing-Cards'],
