@@ -7,15 +7,15 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
-  height: 50vh;
   overflow: hidden;
   box-sizing: border-box;
+  /* removed: height: 50vh; */
 }
 
 .gift-guide-map-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1280 / 854;
   margin: 0 auto;
 }
 
@@ -23,9 +23,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  max-width: none;
-  object-fit: cover;
-  object-position: center;
+  object-fit: cover; 
 }
 
 
@@ -96,7 +94,7 @@
 /* Smokey Bear Accessories*/
 .gift-guide-marker-2 {
   left: 50%;
-  top: 8%;
+  top: 10%;
 }
 
 /* Smokey Bear Sweater */
@@ -108,31 +106,31 @@
 /* Smokey Fleece */
 .gift-guide-marker-7 {
   left: 71%;
-  top: 36%;
+  top: 60%;
 }
 
 /* Smokey Pin */
 .gift-guide-marker-8 {
   left: 72%;
-  top: 27%;
+  top: 45%;
 }
 
 /* Calendar */
 .gift-guide-marker-9 {
-  left: 12%;
-  top: 66%;
+  left: 23%;
+  top: 56%;
 }
 
 /* Yellow Smokey Bandana */
 .gift-guide-marker-10 {
   left: 43%;
-  top: 38%;
+  top: 50%;
 }
 
 /* Smokey Mug */
 .gift-guide-marker-12 {
   left: 58%;
-  top: 19%;
+  top: 26%;
 }
 
 /* Smokey Beanie */
@@ -150,7 +148,7 @@
 /* Pennant Hat */
 .gift-guide-marker-15 {
   left: 90%;
-  top: 22%;
+  top: 32%;
 }
 
 /* Smokey Puzzle */
@@ -196,7 +194,7 @@
   box-sizing: border-box;
   background: #ffffff;
   border-radius: 8px;
-  padding: 40px 32px 32px;
+  padding: 32px 32px 32px;
 }
 
 
@@ -219,38 +217,46 @@
    ========================================= */
 
 .gift-guide-shop-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
 .gift-guide-shop-card {
+  flex: 0 1 calc((100% - 48px) / 3); 
+  max-width: 300px;                 
   display: flex;
   flex-direction: column;
   text-align: center;
   text-decoration: none;
   color: inherit;
 }
-
 .gift-guide-shop-card img {
+  display: block;
+  position: static;
   width: 100%;
+  max-width: 100%;
   height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  margin: 0 0 10px;
+  transform: none;
+  float: none;
   border-radius: 4px;
-  margin-bottom: 10px;
   background: #f4f4f4;
 }
 
-.gift-guide-shop-card__title {
-  font-size: 14px;
-  margin: 0 0 4px;
+.gift-guide-shop-card,
+.gift-guide-shop-card:hover {
+  text-decoration: none;
+  border-bottom: 0;
+  background-image: none;
 }
 
+.gift-guide-shop-card__title,
 .gift-guide-shop-card__price {
-  font-size: 14px;
-  color: #555;
-  margin: 0;
+  margin: 0 0 4px;
 }
 
 .gift-guide-shop-empty {
@@ -328,9 +334,13 @@
   }
 
   .gift-guide-shop-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+  gap: 20px;
+}
+
+.gift-guide-shop-card {
+  flex: 0 1 100%;
+  max-width: 320px;
+}
 
   .gift-guide-modal-close {
     top: 8px;
@@ -354,31 +364,31 @@
 
   <div class="gift-guide-map-wrapper">
 
-    <img class="gift-guide-map-image" src="https://cdn.shopify.com/s/files/1/1529/3721/files/2026_Gift_Guide-Smokey-1280x854-e8ff21e.jpg?v=1793282223" alt="Gifts for the Smokey Superfan">
+    <img class="gift-guide-map-image" src="https://cdn.shopify.com/s/files/1/1529/3721/files/2026_Gift_Guide-National_Park-1280x854-e8ff21e.jpg?v=1793282223" alt="Gifts for the National Parks Lovers">
 
     <!-- MARKERS -->
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Smokey Bear Accessories"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="National Park Roundup Sock"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Smokey Sweater"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Desert Dwellers Bandana"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-7" data-name="Smokey Fleece"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-7" data-name="2027 National Parks Calendar"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-8" data-name="Smokey Pin"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-8" data-name="National Parks Playing Cards"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-9" data-name="Calendar"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-9" data-name="National Parks Throwback Unisex Crewneck"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-10" data-name="Yellow Bandana"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-10" data-name="National Parks Accessories"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-12" data-name="Smokey Mug"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-12" data-name="National Park Aficionado 6-Panel Hat"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-13" data-name="Smokey Beanie"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-13" data-name="Northwest Wildlife Bandana"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="Emblem Sock"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="Smokey Emblem Sock"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-15" data-name="Pennant Hat"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-15" data-name="Smokey Bear Pennant 5-Panel Hat"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-16" data-name="Smokey Puzzle"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-16" data-name="National Parks Montage Unisex Short Sleeve Tee"></button>
 
   
   </div>
@@ -402,7 +412,7 @@
 
     <div class="gift-guide-shop-grid" id="gift-guide-shop-grid"></div>
 
-    <p class="gift-guide-shop-empty" id="gift-guide-shop-empty" hidden>No products found for this park yet.</p>
+    <p class="gift-guide-shop-empty" id="gift-guide-shop-empty" hidden>No products found yet.</p>
 
   </div>
 
@@ -434,20 +444,17 @@
      ========================================= */
 
   const PARK_PRODUCTS = {
-    'Yosemite National Park': [],
-    'Joshua Tree National Park': [],
-    'Saguaro National Park': [],
-    'Rocky Mountain National Park': [],
-    'Bryce Canyon National Park': [],
-    'Great Smoky Mountains National Park': [],
-    'Everglades National Park': [],
-    'Denali National Park': [],
-    'Haleakala National Park': [],
-    'Isle Royale National Park': [],
-    'Crater Lake National Park': [],
-    'Canyonlands National Park': [],
-    'Glacier National Park': [],
-    'Rainier National Park': [],
+    'National Park Roundup Sock': [ 'national-park-roundup-sock'],
+    'Smokey Bear Unisex Sweater': ['Desert-Dwellers-Bandana'],
+    '2027 National Parks Calendar': ['2027-National-Parks-Calendar'],
+    'National Parks Playing Cards': ['National-Parks-Playing-Cards'],
+    'National Parks Throwback Unisex Crewneck': ['National-Parks-Throwback-Unisex-Crewneck'],
+    'National Parks Accessories': ['national-parks-pennant-embroidered-patch','enjoy-the-national-parks-keychain','national-parks-paradise-keychain'],
+    'National Park Aficionado 6-Panel Hat': ['National-Park-Aficionado-6-Panel-Hat'],
+    'Northwest Wildlife Bandana': ['northwest-wildlife-bandana'],
+    'National Parks Tour of North America Unisex Short Sleeve Tee': ['National-Parks-Tour-of-North-America-Unisex-Short-Sleeve-Tee'],
+    'National Parks Good Times Guaranteed Unisex Long Sleeve Tee': [ 'National-Parks-Good-Times-Guaranteed-Unisex-Long-Sleeve-Tee'],
+
 
    /* =========================================
      HOW PRODUCTS ARE ADDED
