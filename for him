@@ -91,7 +91,7 @@
    MARKER POSITIONS
    ========================================= */
 
-/* ational Park Roundup Sock */
+/* Smokey's Message Sock */
 .gift-guide-marker-2 {
   left: 55%;
   top: 10%;
@@ -103,43 +103,43 @@
   top: 45%;
 }
 
-/* 2027 National Parks Calendar */
+/* National Parks Playing Cards */
 .gift-guide-marker-7 {
   left: 76%;
   top: 52%;
 }
 
-/* National Parks Playing Cards */
+/* Outpost Beanie */
 .gift-guide-marker-8 {
   left: 58%;
-  top: 26%;
+  top: 32%;
 }
 
-/* National Parks Throwback Unisex Crewneck */
+/* National Parks Aficionado Hat */
 .gift-guide-marker-9 {
   left: 23%;
-  top: 85%;
+  top: 80%;
 }
 
-/* National Parks Accessories */
+/* Smokey Mug */
 .gift-guide-marker-10 {
   left: 43%;
   top: 50%;
 }
 
-/* National Park Aficionado 6-Panel Hat */
+/* Smokey Calendar */
 .gift-guide-marker-12 {
   left: 35%;
   top: 17%;
 }
 
-/* Northwest Wildlife Bandana */
+/* Alpine Socks */
 .gift-guide-marker-13 {
   left: 15%;
-  top: 65%;
+  top: 35%;
 }
 
-/* National Parks Tour of North America Unisex Short Sleeve Tee */
+/* Traverse Sherpa */
 .gift-guide-marker-14 {
   left: 77%;
   top: 7%;
@@ -153,7 +153,7 @@
 }
 */
 
-/* National Parks Montage Unisex Short Sleeve Teee */
+/* Frontier Fleece */
 .gift-guide-marker-16 {
   left: 9%;
   top: 45%;
@@ -366,7 +366,7 @@
 
   <div class="gift-guide-map-wrapper">
 
-    <img class="gift-guide-map-image" src="https://cdn.shopify.com/s/files/1/1529/3721/files/2026_Gift_Guide-National_Park-1280x854-e8ff21e.jpg?v=1793282223" alt="Gifts for the National Parks Lovers">
+    <img class="gift-guide-map-image" src="https://cdn.shopify.com/s/files/1/1529/3721/files/2026_Gift_Guide-For_Him-1280x854-e8ff21e.jpg?v=1793282222" alt="Gifts for the National Parks Lovers">
 
     <!-- MARKERS -->
 
