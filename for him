@@ -97,10 +97,10 @@
   top: 10%;
 }
 
-/* Desert Dwellers Bandana */
+/* Trailhead Fleece */
 .gift-guide-marker-4 {
   left: 50%;
-  top: 45%;
+  top: 75%;
 }
 
 /* National Parks Playing Cards */
@@ -123,8 +123,8 @@
 
 /* Smokey Mug */
 .gift-guide-marker-10 {
-  left: 43%;
-  top: 50%;
+  left: 32%;
+  top: 49%;
 }
 
 /* Smokey Calendar */
@@ -153,7 +153,7 @@
 }
 */
 
-/* Frontier Fleece */
+/* Trailhead Fleece */
 .gift-guide-marker-16 {
   left: 9%;
   top: 45%;
@@ -372,7 +372,7 @@
 
     <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Smokey's Message Sock"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Desert Dwellers Bandana"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Trailhead Unisex Half Zip Fleece"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-7" data-name="National Parks Playing Cards"></button>
 
@@ -446,7 +446,7 @@
      ========================================= */
 
   const PARK_PRODUCTS = {
-    'Smokey's Message Sock': [ 'Smokeys-Message-Sock'],
+    'Smokeys Message Sock': [ 'Smokeys-Message-Sock'],
     'Desert Dwellers Bandana': ['Desert-Dwellers-Bandana'],
     'National Parks Playing Cards': ['National-Parks-Playing-Cards'],
     'Landmark Outpost Beanie': ['Landmark-Outpost-Beanie'],
