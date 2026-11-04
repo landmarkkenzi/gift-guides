@@ -91,72 +91,65 @@
    MARKER POSITIONS
    ========================================= */
 
-/* Smokeys Message Sock */
+/* Balsam Beanie */
 .gift-guide-marker-2 {
-  left: 55%;
+  left: 50%;
   top: 12%;
 }
 
-/* Trailhead Fleece */
+/* Maroon Sock */
 .gift-guide-marker-4 {
-  left: 50%;
-  top: 75%;
+  left: 46%;
+  top: 72%;
 }
 
-/* National Parks Playing Cards */
+/* Poppy and Pout */
 .gift-guide-marker-7 {
-  left: 76%;
-  top: 52%;
+  left: 78%;
+  top: 54%;
 }
 
-/* Outpost Beanie */
+/* Leave No Trace */
 .gift-guide-marker-8 {
   left: 58%;
-  top: 32%;
+  top: 50%;
 }
 
-/* National Parks Aficionado Hat */
+/* Prismatic Sock */
 .gift-guide-marker-9 {
   left: 63%;
   top: 80%;
 }
 
-/* Smokey Mug */
+/* Pixels Mug */
 .gift-guide-marker-10 {
   left: 32%;
   top: 40%;
 }
 
-/* Smokey Calendar */
+/* Give  a Hoot */
 .gift-guide-marker-12 {
   left: 35%;
-  top: 17%;
+  top: 20%;
 }
 
-/* Alpine Socks */
+/* Full Snap Sherpa */
 .gift-guide-marker-13 {
   left: 15%;
-  top: 35%;
+  top: 40%;
 }
 
-/* Traverse Sherpa */
+/* Smokey Women's Crewneck */
 .gift-guide-marker-14 {
   left: 77%;
   top: 7%;
 }
-*/
 
-/* Smokey Bear Pennant 5-Panel Hat 
+
+/* Bandana Woodsy */ 
 .gift-guide-marker-15 {
   left: 90%;
   top: 32%;
-}
-*/
-
-/* Trailhead Fleece */
-.gift-guide-marker-16 {
-  left: 9%;
-  top: 45%;
 }
 
 
