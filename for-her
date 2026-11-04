@@ -20,10 +20,15 @@
 }
 
 .gift-guide-map-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  float: none !important;
+  object-fit: cover;
 }
 
 
@@ -299,11 +304,10 @@
    ========================================= */
 
 @media screen and (max-width: 749px) {
-
   .gift-guide-fullscreen {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .gift-guide-marker {
@@ -365,9 +369,7 @@
 
     <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Smokeys Message Sock"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Tread Lightly Sock></button>
-
-    <button type="button" class="gift-guide-marker gift-guide-marker-7" data-name="Poppy & Pout x The Landmark Project: Lip Balm Gift Set Trio Desert"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Tread Lightly Sock"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-8" data-name="Leave No Trace 5-Panel Camp Hat"></button>
 
@@ -381,7 +383,7 @@
 
     <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="Babes in the Woods Women's Crewneck Sweatshirt"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-15" data-name="Woodsy Owl Bandana"></button>
+   
   
   </div>
 
