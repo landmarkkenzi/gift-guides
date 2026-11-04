@@ -91,67 +91,68 @@
    MARKER POSITIONS
    ========================================= */
 
-/* Smokey Bear Accessories*/
+/* ational Park Roundup Sock */
 .gift-guide-marker-2 {
   left: 50%;
   top: 10%;
 }
 
-/* Smokey Bear Sweater */
+/* Desert Dwellers Bandana */
 .gift-guide-marker-4 {
   left: 33%;
   top: 30%;
 }
 
-/* Smokey Fleece */
+/* 2027 National Parks Calendare */
 .gift-guide-marker-7 {
   left: 71%;
   top: 60%;
 }
 
-/* Smokey Pin */
+/* National Parks Playing Cards */
 .gift-guide-marker-8 {
   left: 72%;
   top: 45%;
 }
 
-/* Calendar */
+/* National Parks Throwback Unisex Crewneck */
 .gift-guide-marker-9 {
   left: 23%;
   top: 56%;
 }
 
-/* Yellow Smokey Bandana */
+/* National Parks Accessories */
 .gift-guide-marker-10 {
   left: 43%;
   top: 50%;
 }
 
-/* Smokey Mug */
+/* National Park Aficionado 6-Panel Hat */
 .gift-guide-marker-12 {
   left: 58%;
   top: 26%;
 }
 
-/* Smokey Beanie */
+/* Northwest Wildlife Bandana */
 .gift-guide-marker-13 {
   left: 57%;
   top: 5%;
 }
 
-/* Emblem Sock */
+/* Smokey Emblem Sock */
 .gift-guide-marker-14 {
   left: 77%;
   top: 7%;
 }
 
-/* Pennant Hat */
+/* Smokey Bear Pennant 5-Panel Hat 
 .gift-guide-marker-15 {
   left: 90%;
   top: 32%;
 }
+*/
 
-/* Smokey Puzzle */
+/* National Parks Montage Unisex Short Sleeve Teee */
 .gift-guide-marker-16 {
   left: 15%;
   top: 10%;
