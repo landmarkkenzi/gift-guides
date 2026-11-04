@@ -360,25 +360,25 @@
 
     <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Smokey Bear Accessories"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Smokey Sweater"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Smokey Bear Unisex Sweater"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-7" data-name="Smokey Fleece"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-7" data-name="Smokey Bear Unisex Half Zip Fleece"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-8" data-name="Smokey Pin"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-8" data-name="Smokey Bear Postage Stamp Pin"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-9" data-name="Calendar"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-9" data-name="2027 Smokey Bear Calendar"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-10" data-name="Yellow Bandana"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-10" data-name="Smokey Bear Bandana"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-12" data-name="Smokey Mug"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-12" data-name="Smokey Logo Enamel Mug"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-13" data-name="Smokey Beanie"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-13" data-name="Smokey Bear and Friends Beanie"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="Emblem Sock"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="Smokey Emblem Sock"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-15" data-name="Pennant Hat"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-15" data-name="Smokey Bear Pennant 5-Panel Hat"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-16" data-name="Smokey Puzzle"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-16" data-name="Smokey Bear Jigsaw Puzzle"></button>
 
   
   </div>
@@ -434,20 +434,17 @@
      ========================================= */
 
   const PARK_PRODUCTS = {
-    'Yosemite National Park': [],
-    'Joshua Tree National Park': [],
-    'Saguaro National Park': [],
-    'Rocky Mountain National Park': [],
-    'Bryce Canyon National Park': [],
-    'Great Smoky Mountains National Park': [],
-    'Everglades National Park': [],
-    'Denali National Park': [],
-    'Haleakala National Park': [],
-    'Isle Royale National Park': [],
-    'Crater Lake National Park': [],
-    'Canyonlands National Park': [],
-    'Glacier National Park': [],
-    'Rainier National Park': [],
+    'Smokey Bear Accessories': [],
+    'Smokey Bear Unisex Sweater': ['smokey-bear-unisex-sweater'],
+    'Smokey Bear Unisex Half Zip Fleece': ['smokey-bear-unisex-half-zip-fleece'],
+    'Smokey Bear Postage Stamp Pin': ['smokey-bear-postage-stamp-pin'],
+    '2027 Smokey Bear Calendar': ['2027-smokey-bear-calendar'],
+    'Smokey Bear Bandana': ['smokey-bear-bandana'],
+    'Smokey Logo Enamel Mug': ['smokey-logo-enamel-mug'],
+    'Smokey Bear and Friends Beanie': ['smokey-bear-and-friends-beanie'],
+    'Smokey Emblem Sock': ['smokey-emblem-sock'],
+    'Smokey Bear Pennant 5-Panel Hat': [ 'Smokey-Bear-Pennant-5-Panel-Hat'],
+
 
    /* =========================================
      HOW PRODUCTS ARE ADDED
