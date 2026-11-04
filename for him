@@ -91,10 +91,10 @@
    MARKER POSITIONS
    ========================================= */
 
-/* Smokey's Message Sock */
+/* Smokeys Message Sock */
 .gift-guide-marker-2 {
   left: 55%;
-  top: 10%;
+  top: 12%;
 }
 
 /* Trailhead Fleece */
@@ -124,7 +124,7 @@
 /* Smokey Mug */
 .gift-guide-marker-10 {
   left: 32%;
-  top: 49%;
+  top: 40%;
 }
 
 /* Smokey Calendar */
@@ -370,7 +370,7 @@
 
     <!-- MARKERS -->
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Smokey's Message Sock"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Smokeys Message Sock"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Trailhead Unisex Half Zip Fleece"></button>
 
