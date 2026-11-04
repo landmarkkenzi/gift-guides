@@ -93,32 +93,32 @@
 
 /* ational Park Roundup Sock */
 .gift-guide-marker-2 {
-  left: 50%;
+  left: 55%;
   top: 10%;
 }
 
 /* Desert Dwellers Bandana */
 .gift-guide-marker-4 {
-  left: 33%;
-  top: 30%;
+  left: 50%;
+  top: 45%;
 }
 
-/* 2027 National Parks Calendare */
+/* 2027 National Parks Calendar */
 .gift-guide-marker-7 {
-  left: 71%;
-  top: 60%;
+  left: 76%;
+  top: 52%;
 }
 
 /* National Parks Playing Cards */
 .gift-guide-marker-8 {
-  left: 72%;
-  top: 45%;
+  left: 58%;
+  top: 26%;
 }
 
 /* National Parks Throwback Unisex Crewneck */
 .gift-guide-marker-9 {
   left: 23%;
-  top: 56%;
+  top: 85%;
 }
 
 /* National Parks Accessories */
@@ -129,21 +129,22 @@
 
 /* National Park Aficionado 6-Panel Hat */
 .gift-guide-marker-12 {
-  left: 58%;
-  top: 26%;
+  left: 35%;
+  top: 17%;
 }
 
 /* Northwest Wildlife Bandana */
 .gift-guide-marker-13 {
-  left: 57%;
-  top: 5%;
+  left: 15%;
+  top: 65%;
 }
 
-/* Smokey Emblem Sock */
+/* National Parks Tour of North America Unisex Short Sleeve Tee */
 .gift-guide-marker-14 {
   left: 77%;
   top: 7%;
 }
+*/
 
 /* Smokey Bear Pennant 5-Panel Hat 
 .gift-guide-marker-15 {
@@ -154,8 +155,8 @@
 
 /* National Parks Montage Unisex Short Sleeve Teee */
 .gift-guide-marker-16 {
-  left: 15%;
-  top: 10%;
+  left: 9%;
+  top: 45%;
 }
 
 
@@ -385,7 +386,7 @@
 
     <button type="button" class="gift-guide-marker gift-guide-marker-13" data-name="Northwest Wildlife Bandana"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="Smokey Emblem Sock"></button>
+    <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="National-Parks-Tour-of-North-America-Unisex-Short-Sleeve-Tee"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-15" data-name="Smokey Bear Pennant 5-Panel Hat"></button>
 
@@ -449,13 +450,11 @@
     'Smokey Bear Unisex Sweater': ['Desert-Dwellers-Bandana'],
     '2027 National Parks Calendar': ['2027-National-Parks-Calendar'],
     'National Parks Playing Cards': ['National-Parks-Playing-Cards'],
-    'National Parks Throwback Unisex Crewneck': ['National-Parks-Throwback-Unisex-Crewneck'],
+    'National Parks Throwback Unisex Crewneck': ['national-parks-throwback-unisex-crewneck'],
     'National Parks Accessories': ['national-parks-pennant-embroidered-patch','enjoy-the-national-parks-keychain','national-parks-paradise-keychain'],
     'National Park Aficionado 6-Panel Hat': ['National-Park-Aficionado-6-Panel-Hat'],
     'Northwest Wildlife Bandana': ['northwest-wildlife-bandana'],
-    'National Parks Tour of North America Unisex Short Sleeve Tee': ['National-Parks-Tour-of-North-America-Unisex-Short-Sleeve-Tee'],
     'National Parks Good Times Guaranteed Unisex Long Sleeve Tee': [ 'National-Parks-Good-Times-Guaranteed-Unisex-Long-Sleeve-Tee'],
-
 
    /* =========================================
      HOW PRODUCTS ARE ADDED
