@@ -98,7 +98,7 @@
 }
 
 /* Maroon Sock */
-.gift-guide-marker-4 {
+.gift-guide-marker-9 {
   left: 46%;
   top: 72%;
 }
@@ -115,11 +115,11 @@
   top: 50%;
 }
 
-/* Prismatic Sock */
-.gift-guide-marker-9 {
+/* Tread Lightly Sock
+.gift-guide-marker-4 {
   left: 63%;
   top: 80%;
-}
+} 
 
 /* Pixels Mug */
 .gift-guide-marker-10 {
@@ -147,9 +147,9 @@
 
 
 /* Bandana Woodsy */ 
-.gift-guide-marker-15 {
+.gift-guide-marker-4 {
   left: 90%;
-  top: 32%;
+  top: 70%;
 }
 
 
@@ -382,9 +382,6 @@
     <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="Babes in the Woods Women's Crewneck Sweatshirt"></button>
 
     <button type="button" class="gift-guide-marker gift-guide-marker-15" data-name="Woodsy Owl Bandana"></button>
-
-    <button type="button" class="gift-guide-marker gift-guide-marker-16" data-name="Trailhead Unisex Half Zip Fleece"></button>
-
   
   </div>
 
