@@ -446,15 +446,15 @@
      ========================================= */
 
   const PARK_PRODUCTS = {
-    'Smokey's Message Sock': [ 'Smokey's Message Sock'],
+    'Smokey's Message Sock': [ 'Smokeys-Message-Sock'],
     'Desert Dwellers Bandana': ['Desert-Dwellers-Bandana'],
-    '2027 National Parks Calendar': ['2027-national-parks-calendar'],
     'National Parks Playing Cards': ['National-Parks-Playing-Cards'],
-    'National Parks Throwback Unisex Crewneck': ['national-parks-throwback-unisex-crewneck'],
-    'National Parks Accessories': ['national-parks-pennant-embroidered-patch','enjoy-the-national-parks-keychain','national-parks-paradise-keychain'],
+    'Landmark Outpost Beanie': ['Landmark-Outpost-Beanie'],
+    'Smokey Logo Enamel Mug': ['Smokey-Logo-Enamel-Mug'],
+    '2027 Smokey Bear Calendar': ['2027-Smokey-Bear-Calendar'],
     'National Park Aficionado 6-Panel Hat': ['National-Park-Aficionado-6-Panel-Hat'],
-    'Northwest Wildlife Bandana': ['northwest-wildlife-bandana'],
-    'National Parks Good Times Guaranteed Unisex Long Sleeve Tee': [ 'National-Parks-Good-Times-Guaranteed-Unisex-Long-Sleeve-Tee'],
+    'Traverse Unisex Half Snap Sherpa': ['Traverse-Unisex-Half-Snap-Sherpa'],
+    'Trailhead Unisex Half Zip Fleece': [ 'Trailhead-Unisex-Half-Zip-Fleece'],
 
    /* =========================================
      HOW PRODUCTS ARE ADDED
