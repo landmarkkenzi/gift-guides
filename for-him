@@ -163,16 +163,17 @@
   text-align: center !important;
 }
 
-.gift-guide-shop-card img {
+.gift-guide-shop-card__image {
   display: block !important;
-  position: static !important;
-  left: auto !important;
-  right: auto !important;
-  transform: none !important;
-  float: none !important;
-  margin: 0 auto 10px !important;
   width: 100% !important;
-  max-width: 410px !important;
+  max-width: 100% !important;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+  border-radius: 4px;
+  background-color: #f4f4f4;
 }
 
 .gift-guide-shop-card__title,
@@ -418,37 +419,38 @@
       });
   }
 
- function buildCard(product) {
+function buildCard(product) {
   const variant = product.variants && product.variants[0];
   const price = variant ? formatMoney(variant.price) : '';
   const image = product.featured_image || (product.images && product.images[0]) || '';
 
-  const card = document.createElement('a');
-  card.className = 'gift-guide-shop-card';
-  card.href = '/products/' + product.handle;
+  const a = document.createElement('a');
+  a.className = 'gift-guide-shop-card';
+  a.href = '/products/' + product.handle;
 
   if (image) {
-    const img = document.createElement('img');
-    img.src = image;
-    img.alt = product.title || '';
-    img.loading = 'lazy';
-    card.appendChild(img);
+    const pic = document.createElement('img');
+    pic.className = 'gift-guide-shop-card__image';
+    pic.src = image;
+    pic.alt = product.title;
+    pic.loading = 'eager';
+
+    a.appendChild(pic);
   }
 
   const title = document.createElement('p');
   title.className = 'gift-guide-shop-card__title';
-  title.textContent = product.title || '';
+  title.textContent = product.title;
 
   const productPrice = document.createElement('p');
   productPrice.className = 'gift-guide-shop-card__price';
   productPrice.textContent = price;
 
-  card.appendChild(title);
-  card.appendChild(productPrice);
+  a.appendChild(title);
+  a.appendChild(productPrice);
 
-  return card;
-
-  }
+  return a;
+}
 
 
   /* =========================================
@@ -463,10 +465,13 @@
     const name = marker.getAttribute('data-name');
     const handles = PARK_PRODUCTS[name] || [];
 
-    modalTitle.textContent = name;
-    shopGrid.innerHTML = '';
-    shopEmpty.hidden = true;
+   modalTitle.textContent = name;
 
+// Clear all previous product cards and images
+shopGrid.replaceChildren();
+shopEmpty.hidden = true;
+
+// Reset modal content before loading new products
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
