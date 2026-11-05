@@ -92,71 +92,6 @@
 }
 
 
-/* =========================================
-   MARKER POSITIONS
-   ========================================= */
-
-/* Balsam Beanie */
-.gift-guide-marker-2 {
-  left: 50%;
-  top: 12%;
-}
-
-/* Maroon Sock */
-.gift-guide-marker-9 {
-  left: 46%;
-  top: 72%;
-}
-
-/* Poppy and Pout */
-.gift-guide-marker-7 {
-  left: 78%;
-  top: 54%;
-}
-
-/* Leave No Trace */
-.gift-guide-marker-8 {
-  left: 58%;
-  top: 50%;
-}
-
-/* Tread Lightly Sock
-.gift-guide-marker-4 {
-  left: 63%;
-  top: 80%;
-} 
-
-/* Pixels Mug */
-.gift-guide-marker-10 {
-  left: 32%;
-  top: 40%;
-}
-
-/* Give  a Hoot */
-.gift-guide-marker-12 {
-  left: 35%;
-  top: 20%;
-}
-
-/* Full Snap Sherpa */
-.gift-guide-marker-13 {
-  left: 15%;
-  top: 40%;
-}
-
-/* Smokey Women's Crewneck */
-.gift-guide-marker-14 {
-  left: 77%;
-  top: 7%;
-}
-
-
-/* Bandana Woodsy */ 
-.gift-guide-marker-4 {
-  left: 90%;
-  top: 70%;
-}
-
 
 /* =========================================
    MODAL
@@ -367,22 +302,33 @@
 
     <!-- MARKERS -->
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Smokeys Message Sock"></button>
+    <!-- Smokey's Message Sock -->
+<button type="button" class="gift-guide-marker" style="left:50%;top:12%;" data-name="Landmark Lodge Beanie"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Tread Lightly Sock"></button>
+<!-- Tread Lightly Sock -->
+<button type="button" class="gift-guide-marker" style="left:63%;top:88%;" data-name="Tread Lightly Sock"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-8" data-name="Leave No Trace 5-Panel Camp Hat"></button>
+<!-- Leave No Trace 5-Panel Camp Hat -->
+<button type="button" class="gift-guide-marker" style="left:58%;top:50%;" data-name="Leave No Trace 5-Panel Camp Hat"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-9" data-name="Prismatic Sock"></button>
+<!-- Prismatic Sock -->
+<button type="button" class="gift-guide-marker" style="left:46%;top:72%;" data-name="Prismatic Sock"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-10" data-name="National Parks Pixels Enamel Mug"></button>
+<!-- National Parks Pixels Enamel Mug -->
+<button type="button" class="gift-guide-marker" style="left:32%;top:40%;" data-name="National Parks Pixels Enamel Mug"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-12" data-name="Woodsy Owl Retro Women's Short Sleeve Boxy Tee"></button>
+<!-- Woodsy Owl Retro Womens Short Sleeve Boxy Tee -->
+<button type="button" class="gift-guide-marker" style="left:35%;top:20%;" data-name="Woodsy Owl Retro Womens Short Sleeve Boxy Tee"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-13" data-name="Haven Women's Full Snap Sherpa Jacket"></button>
+<!-- Haven Women's Full Snap Sherpa Jacket -->
+<button type="button" class="gift-guide-marker" style="left:15%;top:40%;" data-name="Haven Womens Full Snap Sherpa Jacket"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="Babes in the Woods Women's Crewneck Sweatshirt"></button>
+<!-- Babes in the Woods Women's Crewneck Sweatshirt -->
+<button type="button" class="gift-guide-marker" style="left:77%;top:7%;" data-name="Babes in the Woods Womens Crewneck Sweatshirt"></button>
 
+
+<!-- Poppy & Pout x The Landmark Project: Lip Balm Gift Set Trio (Desert) -->
+<button type="button" class="gift-guide-marker" style="left:80%;top:48%;" data-name="Poppy & Pout x The Landmark Project: Lip Balm Gift Set Trio Desert"></button>
    
   
   </div>
@@ -440,13 +386,14 @@
   const PARK_PRODUCTS = {
     'Woodsy Owl Bandana': [ 'Woodsy-Owl-Bandana'],
     'Tread Lightly Sock': ['Tread-Lightly-Sock'],
-    'Poppy & Pout x The Landmark Project: Lip Balm Gift Set Trio Desert': ['Poppy-&-Pout-x-The-Landmark-Project:-Lip-Balm-Gift-Set-Trio-Desert'],
-    'Leave No Trace 5-Panel Camp Hat': ['Leave-No-Trace-5-Panel-Camp-Hat'],
+    'Poppy & Pout x The Landmark Project: Lip Balm Gift Set Trio Desert': ['poppy-pout-x-the-landmark-project-lip-balm-gift-set-trio-copy'],
+    'Leave No Trace 5-Panel Camp Hat': ['leave-no-trace-camp-hat'],
     'Prismatic Sock': ['Prismatic-Sock'],
     'National Parks Pixels Enamel Mug': ['National-Parks-Pixels-Enamel-Mug'],
-    'Woodsy Owl Retro Womens Short Sleeve Boxy Tee': ['Woodsy-Owl-Retro-Womens-Short-Sleeve-Boxy-Tee'],
-    'Haven Womens Full Snap Sherpa Jacket': ['Haven-womens-Full-Snap-Sherpa-Jacket'],
-    'Babes in the Woods Womens Crewneck Sweatshirt': [ 'Babes-in-the-Woods-Womens-Crewneck-Sweatshirt'],
+    'Woodsy Owl Retro Womens Short Sleeve Boxy Tee': ['woodsy-owl-retro-womens-short-sleeve-boxy-tee'],
+    'Haven Womens Full Snap Sherpa Jacket': ['haven-womens-full-snap-sherpa-jacket'],
+    'Babes in the Woods Womens Crewneck Sweatshirt': [ 'babes-in-the-woods-womens-crewneck-sweatshirt'],
+    'Landmark Lodge Beanie': ['Landmark-Lodge-Beanie'],
 
    /* =========================================
      HOW PRODUCTS ARE ADDED
