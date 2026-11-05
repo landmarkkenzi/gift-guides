@@ -433,10 +433,18 @@
     a.className = 'gift-guide-shop-card';
     a.href = '/products/' + product.handle;
 
-    a.innerHTML =
-      (image ? '<img src="' + image + '" alt="' + product.title + '" loading="lazy">' : '') +
-      '<p class="gift-guide-shop-card__title">' + product.title + '</p>' +
-      '<p class="gift-guide-shop-card__price">' + price + '</p>';
+    if (image) {
+  const pic = document.createElement('div');
+  pic.className = 'gift-guide-shop-card__image';
+  pic.setAttribute('role', 'img');
+  pic.setAttribute('aria-label', product.title);
+  pic.style.backgroundImage = 'url("' + image + '")';
+  a.appendChild(pic);
+}
+
+a.insertAdjacentHTML('beforeend',
+  '<p class="gift-guide-shop-card__title">' + product.title + '</p>' +
+  '<p class="gift-guide-shop-card__price">' + price + '</p>');
 
     return a;
   }
