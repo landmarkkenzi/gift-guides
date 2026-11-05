@@ -361,7 +361,7 @@
 
 <script>
 (function() {
-
+console.count('Gift Guide script initialized');
   const modal = document.getElementById('gift-guide-modal');
   const modalTitle = document.getElementById('gift-guide-modal-title');
   const modalClose = document.getElementById('gift-guide-modal-close');
@@ -486,16 +486,20 @@ shopEmpty.hidden = true;
       return;
     }
 
-    Promise.all(handles.map(fetchProduct)).then(function(products) {
-      const found = products.filter(Boolean);
-      if (!found.length) {
-        shopEmpty.hidden = false;
-        return;
-      }
-      found.forEach(function(product) {
-        shopGrid.appendChild(buildCard(product));
-      });
-    });
+  Promise.all(handles.map(fetchProduct)).then(function(products) {
+  const found = products.filter(Boolean);
+
+  if (!found.length) {
+    shopEmpty.hidden = false;
+    return;
+  }
+// Only display one product per modal
+const product = found[0];
+
+if (product) {
+  shopGrid.appendChild(buildCard(product));
+}
+});
 
   });
 
