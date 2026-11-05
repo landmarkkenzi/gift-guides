@@ -322,7 +322,7 @@
 
 <button type="button" class="gift-guide-marker" style="left:15%;top:65%;" data-name="Northwest Wildlife Bandana"></button>
 
-<button type="button" class="gift-guide-marker" style="left:77%;top:7%;" data-name="National Parks Tour of North America Unisex Short Sleeve Tee"></button>
+<button type="button" class="gift-guide-marker" style="left:52%;top:18%;" data-name="National Parks Pixels Enamel Mug"></button>
 
 <button type="button" class="gift-guide-marker" style="left:9%;top:45%;" data-name="National Parks Montage Unisex Short Sleeve Tee"></button>
   
@@ -383,12 +383,12 @@
     'Desert Dwellers Bandana': ['Desert-Dwellers-Bandana'],
     '2027 National Parks Calendar': ['2027-national-parks-calendar'],
     'National Parks Playing Cards': ['National-Parks-Playing-Cards'],
-    'National Parks Throwback Unisex Crewneck': ['national-parks-throwback-unisex-crewneck'],
+    'National Parks Throwback Unisex Crewneck': ['national-parks-throwback-unisex-crewneck-sweatshirt'],
     'National Parks Accessories': ['national-parks-pennant-embroidered-patch','enjoy-the-national-parks-keychain','national-parks-paradise-keychain'],
     'National Park Aficionado 6-Panel Hat': ['National-Park-Aficionado-6-Panel-Hat'],
     'Northwest Wildlife Bandana': ['northwest-wildlife-bandana'],
     'National Parks Good Times Guaranteed Unisex Long Sleeve Tee': [ 'National-Parks-Good-Times-Guaranteed-Unisex-Long-Sleeve-Tee'],
-    'National Parks Tour of North America Unisex Short Sleeve Tee ': ['National-Parks-Tour-of-North-America-Unisex-Short-Sleeve-Tee'],
+    'National Parks Pixels Enamel Mug': ['National-Parks-Pixels-Enamel-Mug'],
     'National Parks Montage Unisex Short Sleeve Tee': ['national-parks-montage-unisex-short-sleeve-tee'],
 
 /* =========================================
