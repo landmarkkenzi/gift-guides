@@ -237,19 +237,24 @@
   text-decoration: none;
   color: inherit;
 }
-.gift-guide-shop-card img {
-  display: block;
-  position: static;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+
+.gift-guide-shop-card__image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100% !important;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
-  margin: 0 0 10px;
-  transform: none;
-  float: none;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+  float: none !important;
+  transform: none !important;
+  translate: none !important;
+  animation: none !important;
   border-radius: 4px;
-  background: #f4f4f4;
+  background-color: #f4f4f4;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 .gift-guide-shop-card,
@@ -417,7 +422,7 @@
 
     <div class="gift-guide-shop-grid" id="gift-guide-shop-grid"></div>
 
-    <p class="gift-guide-shop-empty" id="gift-guide-shop-empty" hidden>No products found yet.</p>
+    <p class="gift-guide-shop-empty" id="gift-guide-shop-empty" hidden></p>
 
   </div>
 
@@ -503,10 +508,30 @@
     a.className = 'gift-guide-shop-card';
     a.href = '/products/' + product.handle;
 
-    a.innerHTML =
-      (image ? '<img src="' + image + '" alt="' + product.title + '" loading="lazy">' : '') +
-      '<p class="gift-guide-shop-card__title">' + product.title + '</p>' +
-      '<p class="gift-guide-shop-card__price">' + price + '</p>';
+  function buildCard(product) {
+  const variant = product.variants && product.variants[0];
+  const price = variant ? formatMoney(variant.price) : '';
+  const image = product.featured_image || (product.images && product.images[0]) || '';
+
+  const a = document.createElement('a');
+  a.className = 'gift-guide-shop-card';
+  a.href = '/products/' + product.handle;
+
+  if (image) {
+    const pic = document.createElement('div');
+    pic.className = 'gift-guide-shop-card__image';
+    pic.setAttribute('role', 'img');
+    pic.setAttribute('aria-label', product.title);
+    pic.style.backgroundImage = 'url("' + image + '")';
+    a.appendChild(pic);
+  }
+
+  a.insertAdjacentHTML('beforeend',
+    '<p class="gift-guide-shop-card__title">' + product.title + '</p>' +
+    '<p class="gift-guide-shop-card__price">' + price + '</p>');
+
+  return a;
+}
 
     return a;
   }
