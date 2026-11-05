@@ -92,77 +92,6 @@
 }
 
 
-/* =========================================
-   MARKER POSITIONS
-   ========================================= */
-
-/* Smokeys Message Sock */
-.gift-guide-marker-2 {
-  left: 55%;
-  top: 12%;
-}
-
-/* Trailhead Fleece */
-.gift-guide-marker-4 {
-  left: 50%;
-  top: 75%;
-}
-
-/* National Parks Playing Cards */
-.gift-guide-marker-7 {
-  left: 76%;
-  top: 52%;
-}
-
-/* Outpost Beanie */
-.gift-guide-marker-8 {
-  left: 58%;
-  top: 32%;
-}
-
-/* National Parks Aficionado Hat */
-.gift-guide-marker-9 {
-  left: 63%;
-  top: 80%;
-}
-
-/* Smokey Mug */
-.gift-guide-marker-10 {
-  left: 32%;
-  top: 40%;
-}
-
-/* Smokey Calendar */
-.gift-guide-marker-12 {
-  left: 35%;
-  top: 17%;
-}
-
-/* Alpine Socks */
-.gift-guide-marker-13 {
-  left: 15%;
-  top: 35%;
-}
-
-/* Traverse Sherpa */
-.gift-guide-marker-14 {
-  left: 77%;
-  top: 7%;
-}
-*/
-
-/* Smokey Bear Pennant 5-Panel Hat 
-.gift-guide-marker-15 {
-  left: 90%;
-  top: 32%;
-}
-*/
-
-/* Trailhead Fleece */
-.gift-guide-marker-16 {
-  left: 9%;
-  top: 45%;
-}
 
 
 /* =========================================
@@ -375,27 +304,27 @@
 
     <!-- MARKERS -->
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-2" data-name="Smokeys Message Sock"></button>
+  <!-- MARKERS -->
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-4" data-name="Trailhead Unisex Half Zip Fleece"></button>
+<button type="button" class="gift-guide-marker" style="left:60%;top:25%;" data-name="Smokeys Message Sock"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-7" data-name="National Parks Playing Cards"></button>
+<button type="button" class="gift-guide-marker" style="left:43%;top:80%;" data-name="Trailhead Unisex Half Zip Fleece"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-8" data-name="Landmark Outpost Beanie"></button>
+<button type="button" class="gift-guide-marker" style="left:76%;top:52%;" data-name="National Parks Playing Cards"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-9" data-name="National Parks Aficionado 6-Panel Hat"></button>
+<button type="button" class="gift-guide-marker" style="left:58%;top:35%;" data-name="Landmark Outpost Beanie"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-10" data-name="Smokey Logo Enamel Mug"></button>
+<button type="button" class="gift-guide-marker" style="left:90%;top:79%;" data-name="National Parks Aficionado 6-Panel Hat"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-12" data-name="2027 Smokey Bear Calendar"></button>
+<button type="button" class="gift-guide-marker" style="left:35%;top:40%;" data-name="Smokey Logo Enamel Mug"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-13" data-name="Alpine Sunrise Sock"></button>
+<button type="button" class="gift-guide-marker" style="left:35%;top:17%;" data-name="2027 Smokey Bear Calendar"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-14" data-name="Traverse Unisex Half Snap Sherpa"></button>
+<button type="button" class="gift-guide-marker" style="left:15%;top:35%;" data-name="Alpine Sunrise Sock"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-15" data-name="Smokey Bear Pennant 5-Panel Hat"></button>
+<button type="button" class="gift-guide-marker" style="left:77%;top:7%;" data-name="Traverse Unisex Half Snap Sherpa"></button>
 
-    <button type="button" class="gift-guide-marker gift-guide-marker-16" data-name="Trailhead Unisex Half Zip Fleece"></button>
+<button type="button" class="gift-guide-marker" style="left:9%;top:12%;" data-name="Dirt Roads and Detours Trucker Hat"></button>
 
   
   </div>
@@ -460,6 +389,7 @@
     'National Park Aficionado 6-Panel Hat': ['National-Park-Aficionado-6-Panel-Hat'],
     'Traverse Unisex Half Snap Sherpa': ['Traverse-Unisex-Half-Snap-Sherpa'],
     'Trailhead Unisex Half Zip Fleece': [ 'Trailhead-Unisex-Half-Zip-Fleece'],
+    'Dirt Roads and Detours Trucker Hat': ['dirt-roads-and-detours-trucker-hat'],
 
    /* =========================================
      HOW PRODUCTS ARE ADDED
