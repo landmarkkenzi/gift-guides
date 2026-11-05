@@ -301,7 +301,7 @@
 
     <!-- MARKERS -->
 
-    <button type="button" class="gift-guide-marker" style="left:50%;top:10%;" data-name="Smokey Bear Accessories"></button>
+    <button type="button" class="gift-guide-marker" style="left:50%;top:10%;" data-name="Prevent Wildfires Keychain"></button>
 
     <button type="button" class="gift-guide-marker" style="left:33%;top:30%;" data-name="Smokey Bear Unisex Sweater"></button>
 
@@ -353,7 +353,7 @@
      ========================================= */
 
   const PARK_PRODUCTS = {
-    'Smokey Bear Accessories': [ 'only-you-retro-sticker' , 'prevent-wildfires-keychain','i-love-smokey-magnet'],
+    'Prevent Wildfires Keychain': ['prevent-wildfires-keychain'],
     'Smokey Bear Unisex Sweater': ['smokey-bear-unisex-sweater'],
     'Smokey Bear Unisex Half Zip Fleece': ['smokey-bear-unisex-half-zip-fleece'],
     'Smokey Bear Postage Stamp Pin': ['smokey-bear-postage-stamp-pin'],
