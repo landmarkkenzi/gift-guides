@@ -158,29 +158,27 @@
   justify-content: center;
   gap: 24px;
 }
-
 .gift-guide-shop-card {
-  flex: 0 1 calc((100% - 48px) / 3); 
-  max-width: 300px;                 
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
+  align-items: center !important;
+  text-align: center !important;
 }
+
 .gift-guide-shop-card img {
-  display: block;
-  position: static;
+  display: block !important;
+  position: static !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  float: none !important;
+  margin: 0 auto 10px !important;
+  width: 100% !important;
+  max-width: 410px !important;
+}
+
+.gift-guide-shop-card__title,
+.gift-guide-shop-card__price {
   width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  margin: 0 0 10px;
-  transform: none;
-  float: none;
-  border-radius: 4px;
-  background: #f4f4f4;
+  text-align: center !important;
 }
 
 .gift-guide-shop-card,
@@ -188,11 +186,6 @@
   text-decoration: none;
   border-bottom: 0;
   background-image: none;
-}
-
-.gift-guide-shop-card__title,
-.gift-guide-shop-card__price {
-  margin: 0 0 4px;
 }
 
 .gift-guide-shop-empty {
