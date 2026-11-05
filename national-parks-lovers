@@ -167,21 +167,15 @@
 }
 .gift-guide-shop-card__image {
   display: block !important;
-  position: relative !important;
   width: 100% !important;
   max-width: 100% !important;
   aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
   margin: 0 0 10px !important;
   padding: 0 !important;
-  float: none !important;
-  transform: none !important;
-  translate: none !important;
-  animation: none !important;
   border-radius: 4px;
   background-color: #f4f4f4;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
 }
 
 .gift-guide-shop-card,
@@ -424,30 +418,38 @@
       });
   }
 
-  function buildCard(product) {
-    const variant = product.variants && product.variants[0];
-    const price = variant ? formatMoney(variant.price) : '';
-    const image = product.featured_image || (product.images && product.images[0]) || '';
+ function buildCard(product) {
+  const variant = product.variants && product.variants[0];
+  const price = variant ? formatMoney(variant.price) : '';
+  const image = product.featured_image || (product.images && product.images[0]) || '';
 
-    const a = document.createElement('a');
-    a.className = 'gift-guide-shop-card';
-    a.href = '/products/' + product.handle;
+  const a = document.createElement('a');
+  a.className = 'gift-guide-shop-card';
+  a.href = '/products/' + product.handle;
 
-    if (image) {
-  const pic = document.createElement('div');
-  pic.className = 'gift-guide-shop-card__image';
-  pic.setAttribute('role', 'img');
-  pic.setAttribute('aria-label', product.title);
-  pic.style.backgroundImage = 'url("' + image + '")';
-  a.appendChild(pic);
-}
+  if (image) {
+    const pic = document.createElement('img');
+    pic.className = 'gift-guide-shop-card__image';
+    pic.src = image;
+    pic.alt = product.title;
+    pic.loading = 'eager';
 
-a.insertAdjacentHTML('beforeend',
-  '<p class="gift-guide-shop-card__title">' + product.title + '</p>' +
-  '<p class="gift-guide-shop-card__price">' + price + '</p>');
-
-    return a;
+    a.appendChild(pic);
   }
+
+  const title = document.createElement('p');
+  title.className = 'gift-guide-shop-card__title';
+  title.textContent = product.title;
+
+  const productPrice = document.createElement('p');
+  productPrice.className = 'gift-guide-shop-card__price';
+  productPrice.textContent = price;
+
+  a.appendChild(title);
+  a.appendChild(productPrice);
+
+  return a;
+}
 
 
   /* =========================================
@@ -462,10 +464,13 @@ a.insertAdjacentHTML('beforeend',
     const name = marker.getAttribute('data-name');
     const handles = PARK_PRODUCTS[name] || [];
 
-    modalTitle.textContent = name;
-    shopGrid.innerHTML = '';
-    shopEmpty.hidden = true;
+   modalTitle.textContent = name;
 
+// Clear all previous product cards and images
+shopGrid.replaceChildren();
+shopEmpty.hidden = true;
+
+// Reset modal content before loading new products
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
