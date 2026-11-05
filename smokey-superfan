@@ -158,27 +158,27 @@
 }
 
 .gift-guide-shop-card {
-  flex: 0 1 calc((100% - 48px) / 3);
-  max-width: 300px;
+  flex: 0 1 calc((100% - 48px) / 3); 
+  max-width: 300px;                 
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
   text-decoration: none;
   color: inherit;
-  margin-left: auto;
-  margin-right: auto;
 }
-
-.gift-guide-shop-card__image {
-  display: block !important;
-  width: 100% !important;
-  max-width: 300px !important;
-  height: 300px !important;
-  margin: 0 auto 10px !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: contain !important;
+.gift-guide-shop-card img {
+  display: block;
+  position: static;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: 0 0 10px;
+  transform: none;
+  float: none;
+  border-radius: 4px;
+  background: #f4f4f4;
 }
 
 .gift-guide-shop-card,
@@ -304,48 +304,25 @@
 
     <button type="button" class="gift-guide-marker" style="left:50%;top:10%;" data-name="Smokey Bear Accessories"></button>
 
-<button type="button" class="gift-guide-marker" style="left:33%;top:30%;" data-name="Smokey Bear Unisex Sweater"></button>
+    <button type="button" class="gift-guide-marker" style="left:33%;top:30%;" data-name="Smokey Bear Unisex Sweater"></button>
 
-<button type="button" class="gift-guide-marker" style="left:71%;top:60%;" data-name="Smokey Bear Unisex Half Zip Fleece"></button>
+    <button type="button" class="gift-guide-marker" style="left:71%;top:60%;" data-name="Smokey Bear Unisex Half Zip Fleece"></button>
 
-<button type="button" class="gift-guide-marker" style="left:76%;top:44%;" data-name="Smokey Bear Postage Stamp Pin"></button>
+    <button type="button" class="gift-guide-marker" style="left:76%;top:44%;" data-name="Smokey Bear Postage Stamp Pin"></button>
 
-<button type="button" class="gift-guide-marker" style="left:23%;top:56%;" data-name="2027 Smokey Bear Calendar"></button>
+    <button type="button" class="gift-guide-marker" style="left:23%;top:56%;" data-name="2027 Smokey Bear Calendar"></button>
 
-<button type="button" class="gift-guide-marker" style="left:43%;top:54%;" data-name="Smokey Bear Bandana"></button>
+    <button type="button" class="gift-guide-marker" style="left:43%;top:54%;" data-name="Smokey Bear Bandana"></button>
 
-<button type="button" class="gift-guide-marker" style="left:64%;top:26%;" data-name="Smokey Logo Enamel Mug"></button>
+    <button type="button" class="gift-guide-marker" style="left:64%;top:26%;" data-name="Smokey Logo Enamel Mug"></button>
 
-<button type="button" class="gift-guide-marker" style="left:61%;top:7%;" data-name="Smokey Bear and Friends Beanie"></button>
+    <button type="button" class="gift-guide-marker" style="left:61%;top:7%;" data-name="Smokey Bear and Friends Beanie"></button>
 
-<button type="button" class="gift-guide-marker" style="left:77%;top:7%;" data-name="Smokey Emblem Sock"></button>
+    <button type="button" class="gift-guide-marker" style="left:77%;top:7%;" data-name="Smokey Emblem Sock"></button>
 
-<button type="button" class="gift-guide-marker" style="left:90%;top:32%;" data-name="Smokey Bear Pennant 5-Panel Hat"></button>
+    <button type="button" class="gift-guide-marker" style="left:90%;top:32%;" data-name="Smokey Bear Pennant 5-Panel Hat"></button>
 
-<button type="button" class="gift-guide-marker" style="left:15%;top:10%;" data-name="Smokey Bear Jigsaw Puzzle"></button>
-  
-  </div>
-
-</div>
-
-
-<!-- =========================================
-     POPUP MODAL (now shows shoppable products)
-     ========================================= -->
-
-<div class="gift-guide-modal" id="gift-guide-modal" role="dialog" aria-modal="true" aria-hidden="true">
-
-  <div class="gift-guide-modal-content">
-
-    <button type="button" class="gift-guide-modal-close" id="gift-guide-modal-close" aria-label="Close">
-      ×
-    </button>
-
-    <h2 class="gift-guide-modal-title" id="gift-guide-modal-title"></h2>
-
-    <div class="gift-guide-shop-grid" id="gift-guide-shop-grid"></div>
-
-    <p class="gift-guide-shop-empty" id="gift-guide-shop-empty" hidden></p>
+    <button type="button" class="gift-guide-marker" style="left:15%;top:10%;" data-name="Smokey Bear Jigsaw Puzzle"></button>
 
   </div>
 
@@ -387,7 +364,7 @@
     'Smokey Bear and Friends Beanie': ['smokey-bear-and-friends-beanie'],
     'Smokey Emblem Sock': ['smokey-emblem-sock'],
     'Smokey Bear Pennant 5-Panel Hat': [ 'Smokey-Bear-Pennant-5-Panel-Hat'],
-    'Smokey Bear Jigsaw Puzzle': ['Smokey-Bear-Jigsaw-Puzzle'],
+
 
    /* =========================================
      HOW PRODUCTS ARE ADDED
@@ -431,29 +408,10 @@
     a.className = 'gift-guide-shop-card';
     a.href = '/products/' + product.handle;
 
-  function buildCard(product) {
-  const variant = product.variants && product.variants[0];
-  const price = variant ? formatMoney(variant.price) : '';
-  const image = product.featured_image || (product.images && product.images[0]) || '';
-
-  const a = document.createElement('a');
-  a.className = 'gift-guide-shop-card';
-  a.href = '/products/' + product.handle;
-
-  if (image) {
-  const pic = document.createElement('div');
-  pic.className = 'gift-guide-shop-card__image';
-  pic.setAttribute('role', 'img');
-  pic.setAttribute('aria-label', product.title);
-  pic.style.backgroundImage = 'url("' + image + '")';
-  a.appendChild(pic);
-}
-
-a.insertAdjacentHTML('beforeend',
-  '<p class="gift-guide-shop-card__title">' + product.title + '</p>' +
-  '<p class="gift-guide-shop-card__price">' + price + '</p>');
-  return a;
-}
+    a.innerHTML =
+      (image ? '<img src="' + image + '" alt="' + product.title + '" loading="lazy">' : '') +
+      '<p class="gift-guide-shop-card__title">' + product.title + '</p>' +
+      '<p class="gift-guide-shop-card__price">' + price + '</p>';
 
     return a;
   }
