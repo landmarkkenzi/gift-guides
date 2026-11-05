@@ -308,7 +308,6 @@
 
 <button type="button" class="gift-guide-marker" style="left:58%;top:35%;" data-name="Landmark Outpost Beanie"></button>
 
-<button type="button" class="gift-guide-marker" style="left:90%;top:79%;" data-name="National Park Aficionado 6-Panel Hat"></button>
 
 <button type="button" class="gift-guide-marker" style="left:35%;top:40%;" data-name="Smokey Logo Enamel Mug"></button>
 
@@ -379,8 +378,7 @@
     'National Parks Playing Cards': ['National-Parks-Playing-Card'],
     'Landmark Outpost Beanie': ['Landmark-Outpost-Beanie'],
     'Smokey Logo Enamel Mug': ['Smokey-Logo-Enamel-Mug'],
-    '2027 Smokey Bear Calendar': ['2027-Smokey-Bear-Calendar'],
-    'National Park Aficionado 6-Panel Hat': ['National-Park-Aficionado-6-Panel-Hat'],
+    '2027 Smokey Bear Calendar': ['2027-smokey-bear-calendar'],
     'Traverse Unisex Half Snap Sherpa': ['Traverse-Unisex-Half-Snap-Sherpa'],
     'Trailhead Unisex Half Zip Fleece': [ 'Trailhead-Unisex-Half-Zip-Fleece'],
     'Dirt Roads and Detours Trucker Hat': ['dirt-roads-and-detours-trucker-hat'],
